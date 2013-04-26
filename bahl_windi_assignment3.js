@@ -55,7 +55,7 @@ var objNew = garden;
 for (var key in objNew.typesOfSeeds) {
 	console.log("We have " + objNew.typesOfSeeds[key].numberSeeds + " "+ objNew.typesOfSeeds[key].seed + " seeds. ")
 	console.log("To plant in "+ objNew.typesOfSeeds[key].rows + " rows.")
-	console.log("We will plant " + objNew.typesOfSeeds[key].seedsPerRow + " per each row.")
+	console.log("We will plant " + objNew.typesOfSeeds[key].seedPerRow + " per each row.")
 	console.log("The following people will take care of the row until they are all picked:  " + objNew.typesOfSeeds[key].pickRows)
 };
 console.log("I am so excited about these vegatbles from the garden this year.  Lets plant each row.")
@@ -78,17 +78,18 @@ var people = function(result, comment){
 };
 
 //math
-var seedsLeft = function(allSeeds){
+
+var getSeeds= function(allSeeds){
 	var getSeedsLeft = 1080
 		while (getSeedsLeft >= 0){
-			console.log("We have " + getSeedsLeft +"seeds left to plant.");
+			console.log("We have " + getSeedsLeft +" seeds left to plant.");
 			final = getSeedsLeft
 		getSeedsLeft-=36;
 }
 		return final;
 		
 };
-//return output
+var seedsDone = getSeeds();
 
 //string function
 var getSeeds = function(seed1,seed2,seed3,seed4){
@@ -100,6 +101,7 @@ var getSeeds = function(seed1,seed2,seed3,seed4){
 	
 return seed;
 };
+
 
 var seed = getSeeds()
 
