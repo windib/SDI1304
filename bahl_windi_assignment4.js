@@ -22,4 +22,17 @@ var phoneNumber = function (number) {
     }
 };
 
+//Email String
+
+var emailAddress = function (email) {
+	var reg = /[a-zA-Z0-9-._+]+@[a-zA-Z0-9-]+.[a-zA-Z]+/;
+	var OK =reg.test(email);
+		if (!OK) {
+			console.log("Email address is not vaild.");
+		} else {
+			console.log("Email address is vaild.")
+	}
+};
+
+
 
