@@ -35,4 +35,17 @@ var emailAddress = function (email) {
 };
 
 
+//URL String 
+
+var websiteUrl = function (website) {
+	var reg = /^(ht|f)tp(s?)\:\/\/[0=9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\,\'\/\\\+&amp;%\$#_]*)?$/;
+	var OK = reg.exec (website);
+	if (!OK) {
+		console.log("URL is not valid.");
+	} else {
+		console.log("URL is valid");
+	}
+};
+
+
 
