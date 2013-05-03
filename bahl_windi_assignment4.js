@@ -88,9 +88,8 @@ var dateDiff = function(date1,date2) {
 		dateTemp2 = new Date(year1, (parseInt(month1)-1),day1);
 	var hours = Math.ceil(((dateTemp2.getTime()-dateTemp1.getTime())/(100*60*60*24)*24));
 	var days = Math.ceil(((dateTemp2.getTime()-dateTemp1.getTime())/(1000*60*60*24)));
-		console.log("There are " + hours + " hours between "+ date1 + " and " +date2 + ".");
-		console.log("There are " + days + " days between " + date1 + " and " + date2 + ".");
-	
+                console.log("Today, "+ date1 + ", there is " + days + " till my birthday on " + date2 + ".")
+		console.log("That means that I have  " + hours + " hours till  "+ date2 + ".");
 };
 
 //interger
@@ -135,6 +134,6 @@ lib.replaceSeparator("x,y,z");
 
 lib.numberFormat(458.8);
 
-lib.dateDiff("07/31/2012","05/02/2013");
+lib.dateDiff("05/02/2013","07/31/2013");
 
 lib.stringToInt("89");
