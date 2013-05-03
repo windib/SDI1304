@@ -48,4 +48,11 @@ var websiteUrl = function (website) {
 };
 
 
+//Upper Case String
+
+var makeUpper = function (toTransform) {
+	return toTransform.replace(/\b([a-z])/g, function (_, initial) {
+		return initial.toUpperCase();
+	});
+};
 
