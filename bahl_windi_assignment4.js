@@ -64,4 +64,10 @@ var replaceSeparator = function (str) {
 	console.log(str.replace(/,/g, "/"));
 };
 
+// Format Number
+
+var numberFormat = function(number) {
+	var myNumber = number.toFixed(2);
+	console.log(myNumber)
+};
 
