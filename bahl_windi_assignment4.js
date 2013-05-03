@@ -19,8 +19,8 @@ var phoneNumber = function (number) {
 	} else {
 		console.log("Phone number is valid");
 	}
-    }
 };
+
 
 //Email String
 
@@ -99,5 +99,20 @@ var stringToInt = function (string) {
 	var number = parseInt(string);
 		console.log("This function returns the string " + string + " back as the number " , number , ".");
 			
+};
+
+//main output
+
+	return {
+		
+		"phoneNumber" 		: phoneNumber,
+		"emailAddress" 		: emailAddress,
+		"websiteUrl"		: websiteUrl,
+		"makeUpper"		: makeUpper,
+		"replaceSeparator" 	: replaceSeparator,
+		"numberFormat"		: numberFormat,
+		"dateDiff"		: dateDiff,
+		"stringToInt"		: stringToInt
+	};
 };
 
