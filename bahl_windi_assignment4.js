@@ -92,3 +92,12 @@ var dateDiff = function(date1,date2) {
 		console.log("There are " + days + " days between " + date1 + " and " + date2 + ".");
 	
 };
+
+//interger
+
+var stringToInt = function (string) {
+	var number = parseInt(string);
+		console.log("This function returns the string " + string + " back as the number " , number , ".");
+			
+};
+
