@@ -56,3 +56,12 @@ var makeUpper = function (toTransform) {
 	});
 };
 
+//Replace String
+
+var replaceSeparator = function (str) {
+	var str;
+	console.log(str);
+	console.log(str.replace(/,/g, "/"));
+};
+
+
