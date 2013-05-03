@@ -116,3 +116,25 @@ var stringToInt = function (string) {
 	};
 };
 
+//Library
+
+var lib = sdiLibrary();
+lib.phoneNumber("123-456-7890");
+lib.phoneNumber("1234567890");
+
+lib.emailAddress("windibahl@fullsail.edu");
+lib.emailAddress("windibahlfullsailedu");
+
+lib.websiteUrl("www.apple.com");
+lib.websiteUrl("http://www.apple.com");
+lib.websiteUrl("https://www.apple.com");
+
+console.log(lib.makeUpper("hi, welcome to the world of java script."));
+
+lib.replaceSeparator("x,y,z");
+
+lib.numberFormat(458.8);
+
+lib.dateDiff("07/31/2012","05/02/2013");
+
+lib.stringToInt("89");
