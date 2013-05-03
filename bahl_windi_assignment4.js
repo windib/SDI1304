@@ -71,3 +71,24 @@ var numberFormat = function(number) {
 	console.log(myNumber)
 };
 
+// Date Difference
+
+var dateDiff = function(date1,date2) {
+	var 	dmy = date1.split('/'),
+		dmy1 = date2.split('/'),
+		
+		day = dmy[0],
+		month = dmy[1],
+		year = dmy[2],
+		day1 = dmy1[0],
+		month1 = dmy1[1],
+		year1 = dmy1[2],
+		
+		dateTemp1 = new Date(year, (parseInt(month)-1),day),
+		dateTemp2 = new Date(year1, (parseInt(month1)-1),day1);
+	var hours = Math.ceil(((dateTemp2.getTime()-dateTemp1.getTime())/(100*60*60*24)*24));
+	var days = Math.ceil(((dateTemp2.getTime()-dateTemp1.getTime())/(1000*60*60*24)));
+		console.log("There are " + hours + " hours between "+ date1 + " and " +date2 + ".");
+		console.log("There are " + days + " days between " + date1 + " and " + date2 + ".");
+	
+};
